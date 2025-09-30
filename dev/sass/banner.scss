@@ -1,0 +1,114 @@
+.banner {
+	position: relative;
+	.swiper {
+		position: relative;
+		width: 100%;
+
+		&-slide {
+			&--bg1 {
+				background: url('./assets/img/bg1.png') no-repeat;
+				background-size: cover;
+			}
+
+			&--bg2 {
+				background: url('./assets/img/bg2.png') no-repeat;
+				background-size: cover;
+			}
+
+			&-text {
+				font-size: 96px;
+				padding: 132px 578px;
+				white-space: nowrap;
+				color: $body-bg;
+			}
+		}
+
+		&-navigation {
+			margin-left: 60px;
+    		margin-right: 60px;
+    		position: relative;
+    		top: -206px;
+
+			svg {
+				stroke: $body-bg;
+				width: 40px;
+				height: 24px;
+			}
+		}
+
+		&-decoration {
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			z-index: 10;
+			margin: 0 60px;
+		}
+
+		.decorative-dots {
+			svg {
+				width: 42px;
+				height: 10px;
+			}
+		}
+
+		.decorative-line {
+			flex-grow: 1;
+			height: 1px;
+			background-color: $primaryColor;
+			opacity: 0.2;
+			margin: 0 10px 0 -25px;
+			width: 100%;
+		}
+
+		.option-button {
+			width: 22px;
+			height: 22px;
+			border: none;
+			background-color: transparent;
+			position: relative;
+			bottom: auto;
+			right: auto;
+			cursor: pointer;
+
+			svg {
+				width: 22px;
+				height: 22px;
+			}
+		}
+
+		.custom-modal {
+			position: fixed;
+			left: 0;
+			top: 0;
+			background: rgba(19, 132, 193, 0.479);
+			height: 100vh;
+			width: 100vw;
+			z-index: 10;
+			display: none;
+
+			&.show {
+				display: block;
+			}
+
+			&__body {
+				border: 1px solid $body-bg;
+				max-width: $custom-modal-body-max-width;
+				border-radius: 8px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				background-color: $body-bg;
+				padding: 24px;
+			}
+
+			&__close {
+				cursor: pointer;
+			}
+		}
+	}
+}

@@ -1,8 +1,12 @@
 ///fonts///
-$font-primary: "Open Sans";
+$font-primary: "Inter Tight";
 $font-secondary:  "monospace";
 $font-size: 16px;
 
 ///colors///
-$primary-color: #222;
-$secondary-color: #f00;
+$body-bg: #EFF3F5;
+$primaryColor: #0A0F13;
+
+//max-width///
+$container-max-width: 1800px + 24px;
+$custom-modal-body-max-width: 500px;

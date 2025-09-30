@@ -1,7 +1,23 @@
 @font-face {
-    font-family: 'Gilroy-Regular';
-    src: url('./assets/fonts/Gilroy-Regular.woff') format('woff');
-    font-weight: normal; 
+    font-family: 'InterTight';
+    src: url('./assets/fonts/InterTight-Regular.ttf') format('TrueType');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterTight';
+    src: url('./assets/fonts/InterTight-Medium.ttf') format('TrueType');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'InterTight';
+    src: url('./assets/fonts/InterTight-SemiBold.ttf') format('TrueType');
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
