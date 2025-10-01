@@ -1,8 +1,10 @@
 .banner {
 	position: relative;
+	margin-bottom: 100px;
 	.swiper {
 		position: relative;
 		width: 100%;
+		height: 414px;
 
 		&-slide {
 			&--bg1 {
@@ -15,11 +17,14 @@
 				background-size: cover;
 			}
 
-			&-text {
-				font-size: 96px;
+			h2 {
 				padding: 132px 578px;
 				white-space: nowrap;
 				color: $body-bg;
+				font-weight: 400;
+    			align-items: center;
+   				 display: flex;
+    			justify-content: center;
 			}
 		}
 

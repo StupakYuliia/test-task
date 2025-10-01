@@ -12,9 +12,29 @@ body {
 	color: $primaryColor;
 }
 
+h2 {
+	font-size:$font-size-h2;
+}
+
+h3 {
+	font-size: $font-size-h3;
+}
+
+h4 {
+	font-size: $font-size-h4;
+}
+
+h5 {
+	font-size: $font-size-h5;
+}
+
 a {
     text-decoration: none;
 	color: $primaryColor;
+}
+
+ul {
+	list-style: none;
 }
 
 .container {
@@ -25,6 +45,7 @@ a {
     margin-left: auto;
     margin-right: auto;
 	display: flex;
+	flex-direction: column;
 }
 
 .d-none {

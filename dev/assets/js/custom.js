@@ -50,4 +50,26 @@ window.addEventListener("load", function (event) {
 	   	removeShowClass(); // Закрываем модальное окно
 		}
 	});
+
+	const filterItems = document.querySelectorAll('.nav__item');
+	const cards = document.querySelectorAll('.objects__card');
+
+	filterItems.forEach(item => {
+		item.addEventListener('click', (event)=> {
+			event.preventDefault();  //предотвращаем перезагрузку страницы
+			filterItems.forEach(navItem => navItem.classList.remove('active'));
+			item.classList.add('active');
+
+			const filterValue = item.getAttribute('data-filter');
+
+			cards.forEach(card => {
+				const cardValue = card.getAttribute('data-category');
+				if (filterValue === 'усі' || filterValue === cardValue) {
+					card.style.display = 'block'
+				} else {
+					card.style.display = 'none'
+				}
+			})
+		})
+	})
 })

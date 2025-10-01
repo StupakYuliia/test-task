@@ -1,0 +1,132 @@
+.objects {
+	margin-bottom: 214px;
+
+	h3 {
+		font-weight: 500;
+		margin-bottom: 40px;
+	}
+
+	&__nav {
+		margin-bottom: 100px;
+	}
+
+	.nav__list {
+		display: flex;
+		gap: 60px;
+	}
+
+	.nav__item {
+		a {
+			font-size: 24px;
+			font-weight: 600;
+		}
+
+		&.active {
+			border-bottom: 2px solid $primaryColor;
+		}
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 240px;
+		align-items: start;
+		margin-bottom: 92px;
+	}
+
+	&__card {
+		position: relative;
+		padding: 20px 12px;
+		border-top: 1px solid $objects-card-border-color;
+    	border-left: 1px solid $objects-card-border-color;
+    	border-right: 1px solid $objects-card-border-color;
+
+		&::after {
+			position: absolute;
+			content: "";
+			width: 50px;
+			height: 50px;
+			background-image: url(./assets/img/card-pin.png);
+			top: -30px;
+    		left: 50%;
+    		transform: translate(-50%, 0px);
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 28px;
+			background-image: url(./assets/img/card-decoration.png);
+			bottom: -28px;
+			left: 0;
+		}
+
+		h4 {
+			font-weight: 600;
+			margin-bottom: 28px;
+		}
+
+		&-header {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 28px;
+		}
+
+		&-year {
+			font-size: 20px;
+			font-weight: 500;
+		}
+
+		&-tag {
+			@include tag-style;
+			text-transform: uppercase;
+		}
+
+		&-img {
+			margin-bottom: 12px;
+		}
+
+		&-location {
+			font-size: 20px;
+			font-weight: 500;
+			margin-bottom: 28px;
+		}
+
+		&-footer {
+			h5 {
+				font-weight: 500;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+			}
+		}
+
+		&-work-types {
+			gap: 2px;
+    		display: flex;
+    		flex-wrap: wrap;
+
+			.work-type {
+				@include tag-style;
+				color: #737373;
+			}
+		}
+	}
+
+	.download-more {
+		margin: 0 auto;
+
+		a {
+			font-size: 14px;
+			font-weight: 500;
+			display: flex;
+			text-transform: uppercase;
+		}
+
+		svg {
+			width: 16px;
+			height: 16px;
+			margin-left: 12px;
+		}
+	}
+}

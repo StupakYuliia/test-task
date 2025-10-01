@@ -2,11 +2,25 @@
 $font-primary: "Inter Tight";
 $font-secondary:  "monospace";
 $font-size: 16px;
+$font-size-h2: 96px;
+$font-size-h3: 48px;
+$font-size-h4: 24px;
+$font-size-h5: 14px;
+
 
 ///colors///
 $body-bg: #EFF3F5;
 $primaryColor: #0A0F13;
+$objects-card-border-color: rgba(168, 168, 168, 0.2);
 
 //max-width///
 $container-max-width: 1800px + 24px;
 $custom-modal-body-max-width: 500px;
+
+@mixin tag-style {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 4px 8px;
+	border: 1px solid $objects-card-border-color;
+	border-radius: 1000px;
+}
