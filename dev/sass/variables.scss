@@ -1,5 +1,5 @@
 ///fonts///
-$font-primary: "Inter Tight";
+$font-primary: "InterTight";
 $font-secondary:  "monospace";
 $font-size: 16px;
 $font-size-h2: 96px;
@@ -12,10 +12,14 @@ $font-size-h5: 14px;
 $body-bg: #EFF3F5;
 $primaryColor: #0A0F13;
 $objects-card-border-color: rgba(168, 168, 168, 0.2);
+$hover: #afb1b2;
+$color-span: #737373;
 
 //max-width///
 $container-max-width: 1800px + 24px;
 $custom-modal-body-max-width: 500px;
+$footer-contacts-max-width:  676px;
+$footer-images-max-width: 830px;
 
 @mixin tag-style {
 	font-size: 14px;
@@ -23,4 +27,17 @@ $custom-modal-body-max-width: 500px;
 	padding: 4px 8px;
 	border: 1px solid $objects-card-border-color;
 	border-radius: 1000px;
+}
+
+@mixin button-styles {
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 14px 20px;
+	background-color: $primaryColor;
+	color: $body-bg;
+	border-radius: 100px;
+	display: block;
+	cursor: pointer;
+	transition: 0.3s;
 }
